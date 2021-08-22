@@ -1,0 +1,323 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Shop 1994</title>
+        <link rel="stylesheet" href="/asset/style.css">
+        <link rel="stylesheet" href="./asset/base.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/54f5e9521f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header__contact">
+                <ul class="header__contact-list">
+                    <li class="header__contact-item">Hotline: 0383179566</li>
+                    <li class="header__contact-item">Tìm cửa hàng</li>
+                    <li class="header__contact-item">Liên hệ hợp tác</li>
+                </ul>
+                <ul class="header__form">
+                    <li class="form__sign" onclick=loginClick()>Đăng nhập</li>
+                    <li class="form__sign" onclick=registerClick()>Đăng ký</li>
+                </ul>
+            </div>
+            <div class="header__main">
+                <div class="header__logo">
+                    <img class="header__logo-img" src="./asset/img/logo.png" alt="1994 Shop">
+                </div>
+                <div class="header__search">
+                    <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm...">
+                    <div class="header__search-btn">
+                        <i class="header__search-icon fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="header__product-recent" onmouseover = mouseOver() onmouseout = mouseOut()>
+                    <span class="product__title">Sản phẩm đã xem</span>
+                    <i class="product__icon fas fa-angle-down"></i>
+                </div>
+                <div class="header__product-recented">
+                    <p>Bạn chưa xem sản phẩm nào.</p>
+                    <p>Hãy tiếp tục khám phá 1994 Store - Backpack, Clothing & Bags, các sản phẩm bạn đã xem sẽ hiển thị ở đây!</p>
+                </div>
+                <div class="header__cart">
+                    <i class="cart__icon fas fa-shopping-cart"></i>
+                    <span class="cart__title">GIỎ</span>
+                </div>
+            </div>
+            <div class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">TRANG CHỦ</li>
+                    <li class="header__menu-item">HƯỚNG DẪN TÌM ĐỊA CHỈ</li>
+                    <li class="header__menu-item">GIỚI THIỆU</li>
+                    <li class="header__menu-item has-mega">SẢN PHẨM <i class="product_icon fas fa-angle-down"></i></li>
+                    <div class="product__watched">
+                        <ul class="product__watched-list">
+                            <li class="product__watched-item"><a href="">BALO</a></li>
+                            <li class="product__watched-item has-mega"><a href="">TÚI</a>
+                                <ul class="list-mega">
+                                    <li><a href="">Túi đeo ngực</a></li>
+                                    <li><a href="">Túi đeo chéo</a></li>
+                                    <li><a href="">Túi bao tử</a></li>
+                                </ul>
+                            </li>
+                            <li class="product__watched-item has-mega"><a href="">ÁO NAM</a>
+                                <ul class="list-mega">
+                                    <li><a href="">Áo ngắn tay</a></li>
+                                    <li><a href="">Áo dài tay</a></li>
+                                    <li><a href="">Áo khoác</a></li>
+                                </ul>
+                            </li>
+                            <li class="product__watched-item"><a href="">ĐỒNG HỒ</a></li>
+                            <li class="product__watched-item"><a href="">SÁP VUỐT TÓC</a></li>
+                        </ul>
+                    </div>
+                    <li class="header__menu-item">TÌM HIỂU ĐỒ DA</li>
+                    <li class="header__menu-item">DU LỊCH</li>
+                    <li class="header__menu-item">NAM GIỚI</li>
+                    <li class="header__menu-item">LIÊN HỆ</li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <div class="content__banner">
+                    <img src="./asset/img/slider_1.png" class="content__img">
+                </div>
+
+                <div class="content__menu">
+                    <ul>
+                        <li>
+                            <img src="./asset/img/icon-ao-ngan-tay.png" alt="">
+                            <span>Áo ngắn tay</span>
+                        </li>
+                        <li>
+                            <img src="./asset/img/icon-ao-dai-tay.png" alt="">
+                            <span>Áo dài tay</span>
+                        </li>
+                        <li>
+                            <img src="./asset/img/icon-ao-khoac.png" alt="">
+                            <span>Áo khoác</span>
+                        </li>
+                        <li>
+                            <img src="./asset/img/balo-icon-image.png" alt="">
+                            <span>Balo</span>
+                        </li>
+                        <li>
+                            <img src="./asset/img/tui-cheo-icon-image.png" alt="">
+                            <span>Túi chéo</span>
+                        </li>
+                        <li>
+                            <img src="./asset/img/icon-tui-deo-nguc.png" alt="">
+                            <span>Túi đeo ngực</span>
+                        </li>
+                        <li>
+                            <img src="./asset/img/dongho-icon-image.png" alt="">
+                            <span>Đồng hồ</span>
+                        </li>
+                        <li>
+                            <img src="./asset/img/sap-icon-image.png" alt="">
+                            <span>Sáp vuốt tóc</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer__top">
+                    <div class="footer__about">
+                        <h3>VỀ CHÚNG TÔI</h3>
+                        <ul>
+                            <li>Trang chủ</li>
+                            <li>Hướng dẫn tìm địa chỉ</li>
+                            <li>Giới thiệu</li>
+                            <li>Sản phẩm</li>
+                            <li>Tìm hiểu đồ da</li>
+                            <li>Du lịch</li>
+                            <li>Nam giới</li>
+                            <li>Liên hệ</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__policy">
+                        <h3>CHÍNH SÁCH</h3>
+                        <ul>
+                            <li>Chính sách bảo mật</li>
+                            <li>Chính sách vận chuyển</li>
+                            <li>Chính sách đổi trả</li>
+                            <li>Quy định sử dụng</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__help">
+                        <h3>HỖ TRỢ</h3>
+                        <ul>
+                            <li>Tìm kiếm</li>
+                            <li>Đăng nhập</li>
+                            <li>Đăng ký</li>
+                            <li>Giỏ hàng</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__sale">
+                        <h3>NHẬN EMAIL KHUYẾN MÃI</h3>
+                        <input type="email" class="email" placeholder="Nhập địa chỉ email của bạn" required>
+                        <input type="submit" class="footer__btn" value="Đăng ký">
+                        <div class="email__content">
+                            <i class="footer__desc">Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <div class="footer__bottom-content">
+                        <div class="footer__logo">
+                            <img class="footer__logo-img" src="./asset/img/logo.png" alt="1994 Shop">
+                        </div>
+                        <div class="footer__info">
+                            <ul>
+                                <li><i class="fas fa-map-marker-alt"></i>49/180 Nguyễn Lương Bằng, Đống Đa, Hà Nội</li>
+                                <li><i class="fas fa-phone-alt"></i>0383179566</li>
+                                <li><i class="far fa-envelope"></i>hoanglucmc@gmail.com</li>
+                                <li><i class="fas fa-globe-americas"></i>https://1994store.vn</li>
+                            </ul>
+                        </div>
+                        <div class="footer__pay">
+                            <h3>HÌNH THỨC THANH TOÁN</h3>
+                            <ul>
+                                <li><i class="fab fa-cc-amex"></i></li>
+                                <li><i class="fab fa-cc-discover"></i></li>
+                                <li><i class="fab fa-cc-visa"></i></li>
+                                <li><i class="fab fa-cc-paypal"></i></li>
+                                <li><i class="fab fa-cc-mastercard"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal">
+                    <div class="modal__overlay" onclick="esc()"></div>
+    
+                    <div class="modal__body">
+                        <!-- Register form -->
+                        <div class="register__form">
+                            <div class="auth-form">
+                                <div class="auth-form__container">
+                                    <div class="auth-form__header">
+                                        <h3 class="auth-form__heading">Đăng ký</h3>
+                                        <span class="auth-switch__btn switch__btn--login" onclick=loginClick()>Đăng nhập</span>
+                                    </div>
+    
+                                    <div class="auth-form__form">
+                                        <div class="auth-form__group">
+                                            <input type="email" class="auth-form__input" placeholder="Email">
+                                            <input type="password" class="auth-form__input" placeholder="Password">
+                                            <input type="password" class="auth-form__input" placeholder="Confirm">
+                                        </div>
+                                    </div>
+    
+                                    <div class="auth-form__aside">
+                                        <p class="auth-form__policy-text">
+                                            Bằng việc đăng kí, bạn đã đồng ý với ShopMinh về 
+                                            <a href="" class="auth-form__policy-link">Điều khoản dịch vụ</a>
+                                            & <a href="" class="auth-form__policy-link">Chính sách bảo mật</a>
+                                        </p>
+                                    </div>
+    
+                                    <div class="auth-form__controls">
+                                        <button class="btn auth-form__control-back btn-normal">TRỞ LẠI</button>
+                                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                                    </div>
+                                </div>
+    
+                                <div class="auth-form__social">
+                                    <a href="" class="btn btn--with-icon btn--with-icon-facebook">
+                                        <i class="fab fa-facebook-square btn-icon"></i>
+                                        <span class="auth-form__social-label">
+                                            Kết nối với facebook
+                                        </span>
+                                    </a>
+                                    <a href="" class="btn btn--with-icon">
+                                        <i class="fab fa-google btn-icon"></i>
+                                        <span class="auth-form__social-label">
+                                            Kết nối với Google
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Login form -->
+                        <div class="login__form">
+                            <div class="auth-form">
+                                <div class="auth-form__container">
+                                    <div class="auth-form__header">
+                                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                                        <span class="auth-switch__btn switch__btn--register" onclick=registerClick()>Đăng ký</span>
+                                    </div>
+    
+                                    <div class="auth-form__form">
+                                        <div class="auth-form__group">
+                                            <input type="email" class="auth-form__input" placeholder="Email" required>
+                                            <input type="password" class="auth-form__input" placeholder="Password" required>
+                                        </div>
+                                    </div>
+    
+                                    <div class="auth-form__aside">
+                                        <div class="auth-form__help">
+                                            <a href="" class="auth-form__help-link auth-form__help-link-password">Quên mật khẩu</a>
+                                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                                        </div>
+                                    </div>
+    
+                                    <div class="auth-form__controls">
+                                        <button class="btn auth-form__control-back btn-normal">TRỞ LẠI</button>
+                                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                                    </div>
+                                </div>
+    
+                                <div class="auth-form__social">
+                                    <a href="" class="btn btn--with-icon btn--with-icon-facebook">
+                                        <i class="fab fa-facebook-square btn-icon"></i>
+                                        <span class="auth-form__social-label">
+                                            Đăng nhập với facebook
+                                        </span>
+                                    </a>
+                                    <a href="" class="btn btn--with-icon">
+                                        <i class="fab fa-google btn-icon"></i>
+                                        <span class="auth-form__social-label">
+                                            Đăng nhập với Google
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function mouseOver(){
+                var product_recent = document.querySelector('.header__product-recented');
+                product_recent.style.display = 'block';
+            }
+            function mouseOut(){
+                var product_recent = document.querySelector('.header__product-recented');
+                product_recent.style.display = 'none';
+            }
+
+            function loginClick() {
+                document.querySelector('.modal').style.display = 'flex';
+                document.querySelector('.register__form').style.display = 'none';
+                document.querySelector('.login__form').style.display = 'block'
+            }
+
+            function registerClick() {
+                document.querySelector('.modal').style.display = 'flex';
+                document.querySelector('.register__form').style.display = 'block';
+                document.querySelector('.login__form').style.display = 'none'
+            }
+
+            function esc() {
+                document.querySelector('.modal').style.display = 'none';
+            }
+        </script>
+    </body>
+</html>

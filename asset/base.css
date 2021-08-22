@@ -1,0 +1,38 @@
+:root {
+    --main-color: #f3f3f3;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #ee4d2d;
+    --border-color: #dbdbdb;
+
+    --navbar-height: 30px;
+    --header-height: 120px;
+    --header-with-search: calc(var(--header-height) - var(--navbar-height));
+}
+
+ul {
+    list-style: none;
+}
+
+@keyframes flyIn {
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        width: 0%;
+        opacity: 0;
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
